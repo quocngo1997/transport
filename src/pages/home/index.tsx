@@ -912,7 +912,7 @@ export default function Home(): JSX.Element {
                 <div className='section'>
                     <div className='container'>
                         <div className='columns is-mobile is-multiline'>
-                            <div className='column is-one-third-tablet is-half-mobile'>
+                            <div className='column is-one-third-tablet is-full-mobile'>
                                 <div className='box-title'>
                                     <div className='_title has-text-white'>Tin tức</div>
                                     <a className='btn' href=''>
@@ -920,14 +920,14 @@ export default function Home(): JSX.Element {
                                     </a>
                                 </div>
                                 <div className='new-footer'>
-                                    <div className='columns is-gapless'>
-                                        <div className='column is-3'>
+                                    <div className='columns is-mobile is-gapless'>
+                                        <div className='column is-one-quarter-mobile'>
                                             <img
                                                 src='http://pro-theme.com/html/alia-envato/every-sunday-newspaper-magazine-blog-theme/images/autos/22.jpg'
                                                 alt='Placeholder image'
                                             />
                                         </div>
-                                        <div className='column-right column is-9'>
+                                        <div className='column-right column is-three-quarters-mobile'>
                                             <div className='post-info'>
                                                 <h2 className='post-caption'>Dịch vụ</h2>
                                                 <div className='info'>
@@ -946,14 +946,14 @@ export default function Home(): JSX.Element {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='columns is-gapless'>
-                                        <div className='column is-3'>
+                                    <div className='columns is-mobile is-gapless'>
+                                        <div className='column is-one-quarter-mobile'>
                                             <img
                                                 src='http://pro-theme.com/html/alia-envato/every-sunday-newspaper-magazine-blog-theme/images/autos/22.jpg'
                                                 alt='Placeholder image'
                                             />
                                         </div>
-                                        <div className='column-right column is-9'>
+                                        <div className='column-right column is-three-quarters-mobile'>
                                             <div className='post-info'>
                                                 <h2 className='post-caption'>Dịch vụ</h2>
                                                 <div className='info'>
@@ -972,14 +972,14 @@ export default function Home(): JSX.Element {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='columns is-gapless'>
-                                        <div className='column is-3'>
+                                    <div className='columns is-mobile is-gapless'>
+                                        <div className='column is-one-quarter-mobile'>
                                             <img
                                                 src='http://pro-theme.com/html/alia-envato/every-sunday-newspaper-magazine-blog-theme/images/autos/22.jpg'
                                                 alt='Placeholder image'
                                             />
                                         </div>
-                                        <div className='column-right column is-9'>
+                                        <div className='column-right column is-three-quarters-mobile'>
                                             <div className='post-info'>
                                                 <h2 className='post-caption'>Dịch vụ</h2>
                                                 <div className='info'>
@@ -1000,7 +1000,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-one-third-tablet is-half-mobile'>
+                            <div className='column is-one-third-tablet is-full-mobile'>
                                 <div className='box-title'>
                                     <div className='_title has-text-white'>Tin tức</div>
                                     <a className='btn' href=''>
@@ -1008,14 +1008,14 @@ export default function Home(): JSX.Element {
                                     </a>
                                 </div>
                                 <div className='new-footer'>
-                                    <div className='columns is-gapless'>
-                                        <div className='column is-3'>
+                                    <div className='columns is-mobile is-gapless'>
+                                        <div className='column is-one-quarter-mobile'>
                                             <img
                                                 src='http://pro-theme.com/html/alia-envato/every-sunday-newspaper-magazine-blog-theme/images/autos/22.jpg'
                                                 alt='Placeholder image'
                                             />
                                         </div>
-                                        <div className='column-right column is-9'>
+                                        <div className='column-right column is-three-quarters-mobile'>
                                             <div className='post-info'>
                                                 <h2 className='post-caption'>Dịch vụ</h2>
                                                 <div className='info'>
@@ -1034,14 +1034,14 @@ export default function Home(): JSX.Element {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='columns is-gapless'>
-                                        <div className='column is-3'>
+                                    <div className='columns is-mobile is-gapless'>
+                                        <div className='column is-one-quarter-mobile'>
                                             <img
                                                 src='http://pro-theme.com/html/alia-envato/every-sunday-newspaper-magazine-blog-theme/images/autos/22.jpg'
                                                 alt='Placeholder image'
                                             />
                                         </div>
-                                        <div className='column-right column is-9'>
+                                        <div className='column-right column is-three-quarters-mobile'>
                                             <div className='post-info'>
                                                 <h2 className='post-caption'>Dịch vụ</h2>
                                                 <div className='info'>
@@ -1060,14 +1060,14 @@ export default function Home(): JSX.Element {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='columns is-gapless'>
-                                        <div className='column is-3'>
+                                    <div className='columns is-mobile is-gapless'>
+                                        <div className='column is-one-quarter-mobile'>
                                             <img
                                                 src='http://pro-theme.com/html/alia-envato/every-sunday-newspaper-magazine-blog-theme/images/autos/22.jpg'
                                                 alt='Placeholder image'
                                             />
                                         </div>
-                                        <div className='column-right column is-9'>
+                                        <div className='column-right column is-three-quarters-mobile'>
                                             <div className='post-info'>
                                                 <h2 className='post-caption'>Dịch vụ</h2>
                                                 <div className='info'>
@@ -1088,7 +1088,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-one-third-tablet is-half-mobile'>
+                            <div className='column is-one-third-tablet is-full-mobile'>
                                 <div className='box-title'>
                                     <div className='_title has-text-white'>Tin tức</div>
                                     <a className='btn' href=''>
@@ -1096,14 +1096,14 @@ export default function Home(): JSX.Element {
                                     </a>
                                 </div>
                                 <div className='new-footer'>
-                                    <div className='columns is-gapless'>
-                                        <div className='column is-3'>
+                                    <div className='columns is-mobile is-gapless'>
+                                        <div className='column is-one-quarter-mobile'>
                                             <img
                                                 src='http://pro-theme.com/html/alia-envato/every-sunday-newspaper-magazine-blog-theme/images/autos/22.jpg'
                                                 alt='Placeholder image'
                                             />
                                         </div>
-                                        <div className='column-right column is-9'>
+                                        <div className='column-right column is-three-quarters-mobile'>
                                             <div className='post-info'>
                                                 <h2 className='post-caption'>Dịch vụ</h2>
                                                 <div className='info'>
@@ -1122,14 +1122,14 @@ export default function Home(): JSX.Element {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='columns is-gapless'>
-                                        <div className='column is-3'>
+                                    <div className='columns is-mobile is-gapless'>
+                                        <div className='column is-one-quarter-mobile'>
                                             <img
                                                 src='http://pro-theme.com/html/alia-envato/every-sunday-newspaper-magazine-blog-theme/images/autos/22.jpg'
                                                 alt='Placeholder image'
                                             />
                                         </div>
-                                        <div className='column-right column is-9'>
+                                        <div className='column-right column is-three-quarters-mobile'>
                                             <div className='post-info'>
                                                 <h2 className='post-caption'>Dịch vụ</h2>
                                                 <div className='info'>
@@ -1148,14 +1148,14 @@ export default function Home(): JSX.Element {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='columns is-gapless'>
-                                        <div className='column is-3'>
+                                    <div className='columns is-mobile is-gapless'>
+                                        <div className='column is-one-quarter-mobile'>
                                             <img
                                                 src='http://pro-theme.com/html/alia-envato/every-sunday-newspaper-magazine-blog-theme/images/autos/22.jpg'
                                                 alt='Placeholder image'
                                             />
                                         </div>
-                                        <div className='column-right column is-9'>
+                                        <div className='column-right column is-three-quarters-mobile'>
                                             <div className='post-info'>
                                                 <h2 className='post-caption'>Dịch vụ</h2>
                                                 <div className='info'>
