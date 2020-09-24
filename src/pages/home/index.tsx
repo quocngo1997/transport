@@ -863,7 +863,7 @@ export default function Home(): JSX.Element {
                             </div>
                         </div>
                         <nav className='pagination' role='navigation' aria-label='pagination'>
-                            <a className='pagination-previous' title='This is the first page' disabled>
+                            <a className='pagination-previous' title='This is the first page'>
                                 Previous
                             </a>
                             <a className='pagination-next'>Next page</a>
