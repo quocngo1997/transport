@@ -2,6 +2,24 @@ import React from 'react'
 import './style/index.scss'
 
 export default function Home(): JSX.Element {
+    document.addEventListener('DOMContentLoaded', () => {
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0)
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+            // Add a click event on each of them
+            $navbarBurgers.forEach((el) => {
+                el.addEventListener('click', () => {
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target
+                    const $target: any = document.getElementById(target)
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active')
+                    $target.classList.toggle('is-active')
+                })
+            })
+        }
+    })
     return (
         <div>
             <header>
@@ -16,13 +34,13 @@ export default function Home(): JSX.Element {
                                 className='navbar-burger burger'
                                 aria-label='menu'
                                 aria-expanded='false'
-                                data-target='navbarBasicExample'>
+                                data-target='navMenu'>
                                 <span aria-hidden='true' />
                                 <span aria-hidden='true' />
                                 <span aria-hidden='true' />
                             </a>
                         </div>
-                        <div id='navbarBasicExample' className='navbar-menu is-active'>
+                        <div id='navMenu' className='navbar-menu'>
                             <div className='navbar-start'>
                                 <a className='navbar-item navbar-text'>Trang chủ</a>
                                 <a className='navbar-item navbar-text'>Giới thiệu</a>
@@ -56,8 +74,8 @@ export default function Home(): JSX.Element {
                 <div className='section'>
                     <div className='container'>
                         <h1 className='_title'>Dịch vụ</h1>
-                        <div className='columns is-desktop'>
-                            <div className='column is-full-mobile'>
+                        <div className='columns is-mobile is-multiline'>
+                            <div className='column is-one-quarter-desktop is-one-third-tablet is-half-mobile'>
                                 <div className='card'>
                                     <div className='card-image'>
                                         <figure className='image is-4by3'>
@@ -94,7 +112,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-full-mobile'>
+                            <div className='column is-one-quarter-desktop is-one-third-tablet is-half-mobile'>
                                 <div className='card'>
                                     <div className='card-image'>
                                         <figure className='image is-4by3'>
@@ -131,7 +149,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-full-mobile'>
+                            <div className='column is-one-quarter-desktop is-one-third-tablet is-half-mobile'>
                                 <div className='card'>
                                     <div className='card-image'>
                                         <figure className='image is-4by3'>
@@ -168,7 +186,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-full-mobile'>
+                            <div className='column is-one-quarter-desktop is-one-third-tablet is-half-mobile'>
                                 <div className='card'>
                                     <div className='card-image'>
                                         <figure className='image is-4by3'>
@@ -213,8 +231,8 @@ export default function Home(): JSX.Element {
                 <div className='section'>
                     <div className='container'>
                         <div className='follow-videos-container'>
-                            <div className='columns'>
-                                <div className='column is-4'>
+                            <div className='columns is-multiline'>
+                                <div className='column is-one-quarter-desktop is-full-tablet'>
                                     <div className='follow-container'>
                                         <h1 className='_title'>Theo dõi</h1>
                                         <ul className='list-social'>
@@ -261,46 +279,11 @@ export default function Home(): JSX.Element {
                                         videos
                                     </div>
                                 </div>
-                                <div className='column is-8'>
+                                <div className='column is-three-quarters-desktop is-full-tablet'>
                                     <h1 className='_title'>Tin tức</h1>
-                                    <div className='card'>
-                                        <div className='card-image'>
-                                            <figure className='image is-4by3'>
-                                                <img
-                                                    src='http://pro-theme.com/html/alia-envato/every-sunday-newspaper-magazine-blog-theme/images/autos/22.jpg'
-                                                    alt='Placeholder image'
-                                                />
-                                            </figure>
-                                        </div>
-                                        <div className='card-content'>
-                                            <div className='post-info'>
-                                                <h2 className='post-caption'>Dịch vụ</h2>
-                                                <div className='info'>
-                                                    <span className='author-name'>John Doe</span>
-                                                    <span className='date'>
-                                                        <i className='far fa-clock'></i> may 1, 2015
-                                                    </span>
-                                                </div>
-                                            </div>
-                                            <div className='media'>
-                                                <div className='media-content'>
-                                                    <a href='' className='title'>
-                                                        Dịch vụ vận chuyển hàng
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div className='content-media'>
-                                                Bạn đang có hàng gửi đi Campuchia, cần dịch vụ Vận Chuyển Hàng Đi
-                                                Campuchia Tiết Kiệm Chi Phí
-                                            </div>
-                                            <a className='btn' href=''>
-                                                Xem thêm »
-                                            </a>
-                                        </div>
-                                    </div>
                                     <div className='new-under'>
-                                        <div className='columns'>
-                                            <div className='column is-4'>
+                                        <div className='columns is-mobile is-multiline'>
+                                            <div className='column is-full-desktop is-half-tablet is-half-mobile'>
                                                 <div className='card'>
                                                     <div className='card-image'>
                                                         <figure className='image is-4by3'>
@@ -337,7 +320,7 @@ export default function Home(): JSX.Element {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='column is-4'>
+                                            <div className='column is-one-third-desktop is-half-tablet is-half-mobile'>
                                                 <div className='card'>
                                                     <div className='card-image'>
                                                         <figure className='image is-4by3'>
@@ -374,7 +357,44 @@ export default function Home(): JSX.Element {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='column is-4'>
+                                            <div className='column is-one-third-desktop is-half-tablet is-half-mobile'>
+                                                <div className='card'>
+                                                    <div className='card-image'>
+                                                        <figure className='image is-4by3'>
+                                                            <img
+                                                                src='http://pro-theme.com/html/alia-envato/every-sunday-newspaper-magazine-blog-theme/images/autos/22.jpg'
+                                                                alt='Placeholder image'
+                                                            />
+                                                        </figure>
+                                                    </div>
+                                                    <div className='card-content'>
+                                                        <div className='post-info'>
+                                                            <h2 className='post-caption'>Dịch vụ</h2>
+                                                            <div className='info'>
+                                                                <span className='author-name'>John Doe</span>
+                                                                <span className='date'>
+                                                                    <i className='far fa-clock'></i> may 1, 2015
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                        <div className='media'>
+                                                            <div className='media-content'>
+                                                                <a href='' className='title'>
+                                                                    Dịch vụ vận chuyển hàng
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div className='content-media'>
+                                                            Bạn đang có hàng gửi đi Campuchia, cần dịch vụ Vận Chuyển
+                                                            Hàng Đi Campuchia Tiết Kiệm Chi Phí
+                                                        </div>
+                                                        <a className='btn' href=''>
+                                                            Xem thêm »
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div className='column is-one-third-desktop is-half-tablet is-half-mobile'>
                                                 <div className='card'>
                                                     <div className='card-image'>
                                                         <figure className='image is-4by3'>
@@ -422,8 +442,8 @@ export default function Home(): JSX.Element {
             <div className='sports-container bg-grey'>
                 <div className='section'>
                     <div className='container'>
-                        <div className='columns'>
-                            <div className='column is-8'>
+                        <div className='columns is-mobile is-multiline'>
+                            <div className='column is-three-quarters-desktop is-full-tablet is-full-mobile'>
                                 <div className='box-title'>
                                     <div className='_title'>Tin tức</div>
                                     <a className='btn' href=''>
@@ -431,7 +451,7 @@ export default function Home(): JSX.Element {
                                     </a>
                                 </div>
                                 <div className='columns'>
-                                    <div className='new-left column is-5'>
+                                    <div className='new-left column is-two-fifths-tablet'>
                                         <div className='card'>
                                             <div className='card-image'>
                                                 <figure className='image is-4by3'>
@@ -468,9 +488,9 @@ export default function Home(): JSX.Element {
                                             </div>
                                         </div>
                                     </div>
-                                    <div className='column is-7'>
+                                    <div className='column is-three-fifths-tablet'>
                                         <div className='columns is-multiline is-mobile'>
-                                            <div className='column is-half'>
+                                            <div className='column is-half-tablet is-half-mobile'>
                                                 <div className='card'>
                                                     <div className='card-image'>
                                                         <figure className='image is-4by3'>
@@ -507,7 +527,7 @@ export default function Home(): JSX.Element {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='column is-half'>
+                                            <div className='column is-half-tablet is-half-mobile'>
                                                 <div className='card'>
                                                     <div className='card-image'>
                                                         <figure className='image is-4by3'>
@@ -544,7 +564,7 @@ export default function Home(): JSX.Element {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='column is-half'>
+                                            <div className='column is-half-tablet is-half-mobile'>
                                                 <div className='card'>
                                                     <div className='card-image'>
                                                         <figure className='image is-4by3'>
@@ -581,7 +601,7 @@ export default function Home(): JSX.Element {
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div className='column is-half'>
+                                            <div className='column is-half-tablet is-half-mobile'>
                                                 <div className='card'>
                                                     <div className='card-image'>
                                                         <figure className='image is-4by3'>
@@ -622,7 +642,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-4'>
+                            <div className='column is-one-quarter-desktop is-full-tablet is-full-mobile'>
                                 <div className='_title'>Đăng ký nhận tin</div>
                                 <div className='subcribe-now'>
                                     <h1>Subscribe Now</h1>
@@ -639,7 +659,7 @@ export default function Home(): JSX.Element {
                     <div className='container'>
                         <div className='_title'>Tin tức</div>
                         <div className='columns is-multiline is-mobile'>
-                            <div className='column is-4'>
+                            <div className='column is-one-third-tablet is-half-mobile'>
                                 <div className='card'>
                                     <div className='card-image'>
                                         <figure className='image is-4by3'>
@@ -676,7 +696,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-4'>
+                            <div className='column is-one-third-tablet is-half-mobile'>
                                 <div className='card'>
                                     <div className='card-image'>
                                         <figure className='image is-4by3'>
@@ -713,7 +733,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-4'>
+                            <div className='column is-one-third-tablet is-half-mobile'>
                                 <div className='card'>
                                     <div className='card-image'>
                                         <figure className='image is-4by3'>
@@ -750,7 +770,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-4'>
+                            <div className='column is-one-third-tablet is-half-mobile'>
                                 <div className='card'>
                                     <div className='card-image'>
                                         <figure className='image is-4by3'>
@@ -787,7 +807,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-4'>
+                            <div className='column is-one-third-tablet is-half-mobile'>
                                 <div className='card'>
                                     <div className='card-image'>
                                         <figure className='image is-4by3'>
@@ -824,7 +844,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-4'>
+                            <div className='column is-one-third-tablet is-half-mobile'>
                                 <div className='card'>
                                     <div className='card-image'>
                                         <figure className='image is-4by3'>
@@ -891,8 +911,8 @@ export default function Home(): JSX.Element {
             <div className='footer-container'>
                 <div className='section'>
                     <div className='container'>
-                        <div className='columns'>
-                            <div className='column is-4'>
+                        <div className='columns is-mobile is-multiline'>
+                            <div className='column is-one-third-tablet is-half-mobile'>
                                 <div className='box-title'>
                                     <div className='_title has-text-white'>Tin tức</div>
                                     <a className='btn' href=''>
@@ -980,7 +1000,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-4'>
+                            <div className='column is-one-third-tablet is-half-mobile'>
                                 <div className='box-title'>
                                     <div className='_title has-text-white'>Tin tức</div>
                                     <a className='btn' href=''>
@@ -1068,7 +1088,7 @@ export default function Home(): JSX.Element {
                                     </div>
                                 </div>
                             </div>
-                            <div className='column is-4'>
+                            <div className='column is-one-third-tablet is-half-mobile'>
                                 <div className='box-title'>
                                     <div className='_title has-text-white'>Tin tức</div>
                                     <a className='btn' href=''>
@@ -1163,8 +1183,8 @@ export default function Home(): JSX.Element {
             <div className='footer-info'>
                 <div className='section'>
                     <div className='container'>
-                        <div className='columns'>
-                            <div className='column is-4'>
+                        <div className='columns is-mobile is-multiline'>
+                            <div className='column is-one-third-tablet is-full-mobile'>
                                 <img src='https://bulma.io/images/bulma-logo.png' />
                                 <div className='about-short'>
                                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
@@ -1172,10 +1192,10 @@ export default function Home(): JSX.Element {
                                     ante.
                                 </div>
                             </div>
-                            <div className='column is-4'>
+                            <div className='column is-one-third-tablet is-full-mobile'>
                                 <div className='_title  has-text-white'>Live Tweets</div>
                             </div>
-                            <div className='column is-4'>
+                            <div className='column is-one-third-tablet is-full-mobile'>
                                 <div className='_title  has-text-white'>Contact Us</div>
                                 <div className='info-line'>
                                     <span className='icon-info has-text-white'>
